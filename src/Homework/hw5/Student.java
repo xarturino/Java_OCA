@@ -23,17 +23,26 @@ public class Student {
         System.out.println("Math " + averageMath + " Economics " + averageEconomics + " Language " + averageLang);
     }
 
-    void averageResult() {
+    // неверное выполнение задачи (метод должен был быть в классе StudentTest)
+    /*  void averageResult() {
         averageResult = (averageMath + averageEconomics + averageLang)/3;
         System.out.println("Average result is " + averageResult);
         System.out.println("-------");
-    }
+    } */
 }
 
 class StudentTest {
 
+    // метод создается в классе, а не в методе main
+    double averageResult(Student s){
+        double averageResult = (s.averageMath + s.averageEconomics + s.averageLang)/3;
+        System.out.println("Average result is " + averageResult);
+        return averageResult;
+    }
+
     public static void main(String[] args) {
 
+        /*
         Student student1 = new Student(1, "Ivan", "Petrov", 2, 4.2, 3.3, 5.0);
         student1.averageResult();
 
@@ -42,6 +51,14 @@ class StudentTest {
 
         Student student3 = new Student(3, "Alex", "Danilov", 2, 5.0, 5.0, 2.4);
         student3.averageResult();
+         */
+
+        // создается объект класса Student
+        Student s1 = new Student(1, "Ivan", "Petrov", 2, 4.2, 3.3, 5.0);
+        // создается объект класса StudentTest, в котором расположен метод для вычисления средней оценки
+        // параметром метода передаётся созданный объект класса Student
+        StudentTest st = new StudentTest();
+        st.averageResult(s1);
     }
 
 }

@@ -14,6 +14,7 @@ public class BankAccount {
         System.out.println("ID " + id + " Name " + name + " Balance " + balance);
     }
 
+    //  непонятно почему в проверке домашнего задания используется метод с типом void
     double replenishmentBankAccount(double r) {
         balance += r;
         return balance;
