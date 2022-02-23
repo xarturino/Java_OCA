@@ -1,10 +1,14 @@
 package lesson9;
 
 public class Student {
+    public static int a = 10; // создана для урока 10
+
 }
 
 
 class StudentTest{
+
+
     // как заканчивается жизнь объекта
 
     /*

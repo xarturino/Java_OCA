@@ -4,9 +4,9 @@ import javax.crypto.spec.PSource;
 
 public class Student {
 
-    String name;
+    public String name;
     int course;
-    static int count;
+    public static int count;
     int a;// STATIC - переменная принадлежит всему классу, она общая для всех объектов созданных
     // к ней могут обращаться и изменять её любой объект класса, но внутри себя они не хранят её
     /*

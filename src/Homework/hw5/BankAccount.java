@@ -7,7 +7,7 @@ public class BankAccount {
     String name;
     double balance;
 
-    BankAccount(int i, String s, double b) {
+    public BankAccount(int i, String s, double b) {
         id = i;
         name = s;
         balance = b;
